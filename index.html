@@ -5,57 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/ErinMeyerCssReset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=La+Belle+Aurore&display=swap" rel="stylesheet"> 
+
     <title>Emmanuele Durante portfolio</title>
 </head>
 
 <body>
+    <div class="scroll-box">
+        <header class="header">
+            <a href='#footer' target="_self"><h2>Emmanuele Durante's</h2></a>
+            <a href='#main' target="_self"><p>portfolio</p></a>
+            <div class="cover"></div>
+        </header>
 
-    <header class="header">
-        <h2>Emmanuele Durante's</h2>
-        <p>portfolio</p>
-    </header>
-
-    <main class="main">
-        <div class="huddle">
-            <h4>HTML & CSS Challenge from Frontendmentor</h4>
-            <p>This is a mockup of a landing page</p>
-        </div>
-
-        <div class="google-homepage">
-            <h4>The Odin Project challenge</h4>
-            <p>This is a replica of the google homepage</p>
-        </div>
-
-        <div class="tripute-page">
-            <h4>freecodecamp project</h4>
-            <p>In this project I had to build a tribute page for DrBorlaug</p>
-        </div>
-            <h4>freecodecamp project</h4>
-            <p>In this project I had to build an online form</p>
-        <div class="fcc-form">
-            h4
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="presentation">
-            <p>I'm a thinker</p><br>
-            <p>Some times I'd be an overthinker</p><br>
-            <p>Most of times I'll be a dreamer</p>
-        </div>
-
-        <form action="#" class="contact-form"></form>
-            <div class="form-div">
-                <div class="email-input">
-                    <input type="email" placeholder="type your email here, ty">
-                </div>
-                
-                <div class="message-input">
-                    <input type="text" placeholder="type your message for me in here!">
-                </div>
-                <button type="submit"></button>
+        <main id='main' class="main">
+            <div class="main-header">
+                <h3>portfolio</h3>
             </div>
-        </form>
-    </footer>
+            
+            <div class="portfolio">
+                <a class='fem-huddle' href='https://atardilla.github.io/huddle-landing-page/' target="blanck">
+                    <div class="preview">
+                        <h4>Frontendmentor challenge</h4>
+                        <p>This is a mockup of a landing page</p>
+                    </div>
+                </a>
+
+                <a class='top-google' href='https://atardilla.github.io/TOP-project-google-homepage/' target="blanck">
+                    <div class="preview">
+                        <h4>The Odin Project challenge</h4>
+                        <p>This is a replica of the google homepage</p>
+                    </div>
+                </a>
+
+                <a class='fcc-tribute' href='https://atardilla.github.io/freecodecamp-project-tribute-page/' target="blanck">
+                    <div class="preview">
+                        <h4>freecodecamp project</h4>
+                        <p>In this project I had to build a tribute page for DrBorlaug</p>
+                    </div>
+                </a>
+
+                <a class='fcc-form' href='https://atardilla.github.io/freecodecamp-survey-form/'>
+                    <div class="preview">       
+                        <h4>freecodecamp project</h4>
+                        <p>In this project I had to build an online form</p>
+                    </div>
+                </a>
+            </div>
+
+        </main>
+
+        <footer id='footer' class="footer">
+            
+            <div class="emmanuele-durante">
+                <h3>Emmanuele Durante</h3>
+            </div>    
+            <div class='footer-content'>
+                <div class="presentation">
+                    <p>I'm a <span class='thinker'>thinker</span></p><br>
+                    <p>Some times I'd be an <span class='overthinker'>overthinker</span></p><br>
+                    <p>Most of times I'll be a <span class='dreamer'>dreamer</span></p>
+                </div>
+
+                <form action="#" class="contact-form">
+                    <div class="form-div">
+                        <div class="input email-input">
+                            <input type="email" placeholder="type your email here, ty">
+                        </div>
+                        
+                        <div class="input message-input">
+                            <input type="textarea" placeholder="type your message for me in here!">
+                        </div>
+                        <button type="input submit">Find me!</button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

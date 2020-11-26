@@ -1,14 +1,364 @@
-.header {
+/* COLORS */
+/* FONTS */
+body {
+  display: block;
+  width: 100%;
+  background: #000000;
+  /*border: 1px solid $purple*/
+}
+
+.scroll-box {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.scroll-box .header {
   background: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  width: 1440px;
   height: 900px;
-  margin: 0 auto;
+  margin: 0 auto 400px;
+  /* sometimes I just put random border for me to see the positions and dimensions of the blocks */
+  /*border: 1px solid $purple*/
+  color: #fff;
+  position: relative;
+  /* this div's goal is just to cover an imperfection of the pic on the background
+            I know it would be easier to correct it in gimp but my lazyass doesn't let me do it... sorry*/
 }
 
-body {
-  width: 100%;
+.scroll-box .header a {
+  color: #fff;
+}
+
+.scroll-box .header a:hover {
+  color: #df99ff;
+  -webkit-box-shadow: 1px 1px 100px #01D1FF;
+          box-shadow: 1px 1px 100px #01D1FF;
+}
+
+.scroll-box .header h2 {
+  position: absolute;
+  width: 815px;
+  height: 107px;
+  left: 24px;
+  top: 343px;
+  font-family: Cormorant;
+  font-size: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scroll-box .header p {
+  position: absolute;
+  width: 382px;
+  height: 97.05px;
+  left: 220px;
+  top: 471px;
+  font-family: "La Belle Aurore";
+  font-size: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  letter-spacing: 0.15em;
+}
+
+.scroll-box .header .cover {
+  position: absolute;
+  width: 236px;
+  height: 116px;
+  left: 995px;
+  top: 813px;
   background: #000000;
+}
+
+main {
+  width: 100%;
+  margin: 250px auto;
+}
+
+main .main-header {
+  font-family: "La Belle Aurore";
+  font-size: 78px;
+  width: 100%;
+  height: 150px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  letter-spacing: 1.15em;
+  padding: 75px 0 0 0;
+  margin: 75px auto;
+}
+
+main .portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas: 'nw ne' 'sw se';
+  color: #fff;
+  margin: 0 auto;
+  width: 1440px;
+  -webkit-column-gap: 45px;
+          column-gap: 45px;
+  grid-row-gap: 41px;
+}
+
+main .portfolio a {
+  text-decoration: none;
+  width: 660px;
+  height: 400px;
+}
+
+main .portfolio a .preview {
+  width: 100%;
+  height: 100%;
+  background: #000000af;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+main .portfolio a .preview h4 {
+  font-family: "La Belle Aurore";
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+main .portfolio a .preview p {
+  font-family: Cormorant;
+  font-size: 24px;
+}
+
+main .portfolio a .preview:hover {
+  background: transparent;
+  color: transparent;
+}
+
+main .portfolio .fem-huddle {
+  background: url(../images/Untitled.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nw;
+}
+
+main .portfolio .top-google {
+  background: url(../images/google.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: ne;
+}
+
+main .portfolio .fcc-tribute {
+  background: url(../images/tribute.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sw;
+}
+
+main .portfolio .fcc-form {
+  background: url(../images/form.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: se;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1440px;
+  color: #fff;
+  margin: 0 auto 1000px;
+}
+
+#footer .emmanuele-durante {
+  font-family: "La Belle Aurore";
+  font-size: 82px;
+  letter-spacing: 0.58em;
+  margin: 85px auto 85px;
+}
+
+#footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1440px;
+}
+
+#footer .footer-content .presentation {
+  font-family: Cormorant;
+  font-size: 62px;
+}
+
+#footer .footer-content .presentation .thinker {
+  color: #df99ff;
+}
+
+#footer .footer-content .presentation .overthinker {
+  color: #FFD850;
+}
+
+#footer .footer-content .presentation .dreamer {
+  color: #01D1FF;
+}
+
+#footer .footer-content .contact-form {
+  width: 50%;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#footer .footer-content .contact-form .form-div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #727272;
+}
+
+#footer .footer-content .contact-form .form-div .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 5px;
+}
+
+#footer .footer-content .contact-form .form-div .input input {
+  vertical-align: text-top;
+  width: 95%;
+  margin: auto;
+}
+
+#footer .footer-content .contact-form .form-div .input input ::-webkit-input-placeholder {
+  font-size: 35px;
+  vertical-align: text-top;
+}
+
+#footer .footer-content .contact-form .form-div .input input :-ms-input-placeholder {
+  font-size: 35px;
+  vertical-align: text-top;
+}
+
+#footer .footer-content .contact-form .form-div .input input ::-ms-input-placeholder {
+  font-size: 35px;
+  vertical-align: text-top;
+}
+
+#footer .footer-content .contact-form .form-div .input input ::placeholder {
+  font-size: 35px;
+  vertical-align: text-top;
+}
+
+#footer .footer-content .contact-form .form-div .email-input input {
+  height: 40px;
+}
+
+#footer .footer-content .contact-form .form-div .message-input input {
+  height: 300px;
+}
+
+#footer .footer-content .contact-form .form-div .message-input input placeholder {
+  font-size: 35px;
+}
+
+#footer .footer-content .contact-form .form-div button {
+  width: 97%;
+  margin: 5px;
+  background: #01D1FF;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 28px;
+}
+
+#footer .footer-content .contact-form .form-div button:hover {
+  cursor: pointer;
+}
+
+@media (max-whidth: 1024px) {
+  .header {
+    background: #000000;
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .main .main-header {
+    letter-spacing: 1em;
+  }
+  .main .portfolio {
+    -ms-grid-columns: 0.75fr;
+        grid-template-columns: 0.75fr;
+    -ms-grid-rows: 400px 400px 400px 400px;
+        grid-template-rows: 400px 400px 400px 400px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
