@@ -1,72 +1,64 @@
-body
-    display: block
-    width: 100%
-    background: $black
-    
-    /*border: 1px solid $purple*/
-
-.scroll-box
-    width: 100vw
-    height: 100vh
-    overflow-y: scroll
-    scroll-behavior: smooth    
-    
-    .header
-        background: url(../images/background.png)
-        background-repeat: no-repeat
-        background-size: contain
-        width: 1440px
-        height: 900px
-        margin: 0 auto 400px
+@media screen and (max-width: 480px)
         
-        /* sometimes I just put random border for me to see the positions and dimensions of the blocks */
-        /*border: 1px solid $purple*/
+    body
+        width: 100vw
+        background: $black
+
         
-        color: $white
-        position: relative
 
-        a
-            color: $white
-
-        a:hover
-            color: $purple
-            box-shadow: 1px 1px 100px $blue
-
-        h2
-            position: absolute
-            width: 815px
-            height: 107px
-            left: 24px
-            top: 343px
-
-            font-family: $first-font
-            font-size: 90px
-            display: flex
+        .scroll-box
+            width: 100vw
+            height: 5000px
+            display: flexbox
+            flex-direction: column
             align-items: center
+            overflow-y: scroll
+            scroll-behavior: smooth  
+            
+            .header
+                background: url(../images/background.png)
+                background-repeat: no-repeat
+                background-size: contain
+                width: 100%
+                height: $proportional-y  
+                color: $white
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: space-around
 
-        p
-            position: absolute
-            width: 382px
-            height: 97.05px
-            left: 220px
-            top: 471px
+                .div-logo
+                    align-self: flex-start
+                    width: $real-x/2
+                    height: $real-x/2
+                    margin: 0 0 0 4vw
+                    img
+                        width: 100%
+                        height: auto
+                
+                .titles
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    height: 50vh
+                    justify-content: center
+    
 
-            font-family: $second-font
-            font-size: 82px
+                a
+                    color: $white
+                    text-decoration: none
 
-            display: flex
-            align-items: center
-            text-align: right
-            letter-spacing: 0.15em
+                a:hover
+                    color: $purple
+
+                h2
+                    font-family: $first-font
+                    font-size: 10vw
+                    margin-bottom: 5vh
+
+                p
+                    font-family: $second-font
+                    font-size: 10vw
+                    letter-spacing: 0.15em
 
 
-        /* this div's goal is just to cover an imperfection of the pic on the background
-            I know it would be easier to correct it in gimp but my lazyass doesn't let me do it... sorry*/
-
-        .cover
-            position: absolute
-            width: 236px
-            height: 116px
-            left: 995px
-            top: 813px
-            background: $black
