@@ -1,91 +1,95 @@
-main
-    width: 100%
-    margin: 250px auto 
-
-    .main-header
-        font-family: $second-font
-        font-size: 78px
+@media screen and (max-width: 480px)
+    
+    main
         width: 100%
-        height: 150px
+        margin: 25vh auto 
+        
         color: $white
+        
         display: flex
-        align-items: center
-        justify-content: space-around
-        letter-spacing: 1.15em
-        padding: 75px 0 0 0
-        margin: 75px auto
+        flex-direction: column
+        align-items: center 
 
-    .portfolio
-        display: grid
-        grid-template-columns: 1fr 1fr
-        grid-template-rows: 400px 400px
-        grid-template-areas: 'nw ne' 'sw se'
-        color: $white
-        margin: 0 auto 
-        width: 1440px
-        column-gap: 45px
-        grid-row-gap: 41px
-
-        a
-            text-decoration: none
-            width: 660px
-            height: 400px
-      
-
-            .preview
-                width: 100%
-                height: 100%
-                
-                background: #000000af
-                display: flex
-                flex-direction: column
-                align-items: center
-                justify-content: center
+        .main-header
+            font-family: $second-font
+            font-size: 10vw
+            letter-spacing: 2.5vw
             
-                color: $white
-                text-decoration: none
+            padding: 10vh 0 0 0 
 
-                h4
-                    font-family: $second-font
-                    font-size: 36px
-                    margin-bottom: 24px
-                
-                p
-                    font-family: $first-font
-                    font-size: 24px
 
-            .preview:hover
-                background: transparent
-                color: transparent
-                
+
+
+        .portfolio
+            display: grid
+            grid-template-columns: 1fr
+            grid-template-rows: $real-y/3.5 $real-y/3.5 $real-y/3.5 $real-y/3.5
+            grid-template-areas: '1' '2' '3' '4'
+            color: $white
+            
+            margin: 0 auto 
+   
  
 
-        .fem-huddle
-            background: url(../images/Untitled.png)
-            background-size: cover
-            background-repeat: no-repeat
-            grid-area: nw
+            a
+                display: block
+                text-decoration: none
+                width: 85%
+                height: 85%
+                margin: auto
 
-        .top-google
-            background: url(../images/google.png)
-            background-size: cover
-            background-repeat: no-repeat
-            grid-area: ne
+                .preview
+                    width: 100%
+                    height: 100%
+                    
+                    background: #000000af
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center                
+                    color: $white
+                    text-decoration: none
 
-        .fcc-tribute
-            background: url(../images/tribute.png)
-            background-size: cover
-            background-repeat: no-repeat
-            grid-area: sw
+                    h4
+                        font-family: $second-font
+                        font-size: 3vh
+                        
+                    
+                    p
+                        font-family: $first-font
+                        font-size: 2vh
 
-        .fcc-form
-            background: url(../images/form.png)
-            background-size: cover
-            background-repeat: no-repeat
-            grid-area: se
+                .preview:hover
+                    background: transparent
+                    color: transparent
+                    
+    
+
+            .fem-huddle
+                background: url(../images/Untitled.png)
+                background-size: contain
+                background-repeat: no-repeat
+                grid-area: '1'
+            .top-google
+                background: url(../images/google.png)
+                background-size: contain
+                background-repeat: no-repeat
+                grid-area: '2'
+
+            .fcc-tribute
+                background: url(../images/tribute.png)
+                background-size: contain
+                background-repeat: no-repeat
+                grid-area: '3'
+
+            .fcc-form
+                background: url(../images/form.png)
+                background-size: contain
+                background-repeat: no-repeat
+                grid-area: '4'
+
+                
+
+
 
             
-
-
-
-        
