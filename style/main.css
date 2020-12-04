@@ -1,312 +1,363 @@
 /* COLORS */
 /* FONTS */
 /* DIMENSIONS * */
-@media screen and (max-width: 480px) {
-  body {
-    width: 100vw;
-    background: #000000;
+body {
+  width: 100vw;
+  background: #000000;
+}
+
+body .scroll-box {
+  width: 100vw;
+  height: 2000px;
+  display: flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body .scroll-box .header {
+  background: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 160vw;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .scroll-box .header .div-logo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 50vw;
+  height: 50vw;
+  margin: 0 0 0 4vw;
+}
+
+body .scroll-box .header .div-logo img {
+  width: 100%;
+  height: auto;
+}
+
+body .scroll-box .header .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .scroll-box .header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body .scroll-box .header a:hover {
+  color: #df99ff;
+}
+
+body .scroll-box .header h2 {
+  font-family: Cormorant;
+  font-size: 10vw;
+  margin-bottom: 5vh;
+}
+
+body .scroll-box .header p {
+  font-family: "La Belle Aurore";
+  font-size: 10vw;
+  letter-spacing: 0.15em;
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    height: 100vh !important;
   }
-  body .scroll-box {
-    width: 100vw;
-    height: 5000px;
-    display: flexbox;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+  .header .div-logo {
+    height: 0px !important;
+    margin: 0 0 0 -1000px !important;
   }
-  body .scroll-box .header {
-    background: url(../images/background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 160vw;
-    color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .header .titles {
+    -ms-flex-item-align: start !important;
+        align-self: flex-start !important;
   }
-  body .scroll-box .header .div-logo {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    width: 50vw;
-    height: 50vw;
-    margin: 0 0 0 4vw;
-  }
-  body .scroll-box .header .div-logo img {
-    width: 100%;
-    height: auto;
-  }
-  body .scroll-box .header .titles {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 50vh;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  body .scroll-box .header a {
-    color: #fff;
-    text-decoration: none;
-  }
-  body .scroll-box .header a:hover {
-    color: #df99ff;
-  }
-  body .scroll-box .header h2 {
-    font-family: Cormorant;
-    font-size: 10vw;
-    margin-bottom: 5vh;
-  }
-  body .scroll-box .header p {
-    font-family: "La Belle Aurore";
-    font-size: 10vw;
-    letter-spacing: 0.15em;
+  .header .titles h2, .header .titles p {
+    font-size: 4.5vw !important;
+    margin: 0 0 0 5vw;
   }
 }
 
-@media screen and (max-width: 480px) {
-  main {
-    width: 100%;
-    margin: 25vh auto;
-    color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  main .main-header {
-    font-family: "La Belle Aurore";
-    font-size: 10vw;
-    letter-spacing: 2.5vw;
-    padding: 10vh 0 0 0;
-  }
-  main .portfolio {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 28.57143vh 28.57143vh 28.57143vh 28.57143vh;
-        grid-template-rows: 28.57143vh 28.57143vh 28.57143vh 28.57143vh;
-        grid-template-areas: '1' '2' '3' '4';
-    color: #fff;
-    margin: 0 auto;
-  }
-  main .portfolio a {
-    display: block;
-    text-decoration: none;
-    width: 85%;
-    height: 85%;
-    margin: auto;
-  }
-  main .portfolio a .preview {
-    width: 100%;
-    height: 100%;
-    background: #000000af;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #fff;
-    text-decoration: none;
-  }
-  main .portfolio a .preview h4 {
-    font-family: "La Belle Aurore";
-    font-size: 3vh;
-  }
-  main .portfolio a .preview p {
-    font-family: Cormorant;
-    font-size: 2vh;
-  }
-  main .portfolio a .preview:hover {
-    background: transparent;
-    color: transparent;
-  }
-  main .portfolio .fem-huddle {
-    background: url(../images/Untitled.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    grid-area: '1';
-  }
-  main .portfolio .top-google {
-    background: url(../images/google.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    grid-area: '2';
-  }
-  main .portfolio .fcc-tribute {
-    background: url(../images/tribute.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    grid-area: '3';
-  }
-  main .portfolio .fcc-form {
-    background: url(../images/form.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    grid-area: '4';
-  }
+main {
+  width: 100%;
+  margin: 25vh auto;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (max-width: 480px) {
-  #footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    color: #fff;
-    margin: 0 auto;
-  }
-  #footer .emmanuele-durante {
-    padding: 5vh 0 0 0;
-    font-family: "La Belle Aurore";
-    font-size: 13vw;
-  }
-  #footer .footer-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-  }
-  #footer .footer-content .presentation {
-    font-family: Cormorant;
-    font-size: 6vw;
-    margin: 0 0 0 3vw;
-  }
-  #footer .footer-content .presentation .thinker {
-    color: #df99ff;
-  }
-  #footer .footer-content .presentation .overthinker {
-    color: #FFD850;
-  }
-  #footer .footer-content .presentation .dreamer {
-    color: #01D1FF;
-  }
-  #footer .footer-content .contact-form {
-    width: 50%;
-    height: 500px;
-    padding: 10px;
-    margin: 10px;
-  }
-  #footer .footer-content .contact-form .form-div {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: #727272;
-  }
-  #footer .footer-content .contact-form .form-div .input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
-    margin: 5px;
-  }
-  #footer .footer-content .contact-form .form-div .input input {
-    vertical-align: text-top;
-    width: 95%;
-    margin: auto;
-  }
-  #footer .footer-content .contact-form .form-div .input input ::-webkit-input-placeholder {
-    font-size: 35px;
-    vertical-align: text-top;
-  }
-  #footer .footer-content .contact-form .form-div .input input :-ms-input-placeholder {
-    font-size: 35px;
-    vertical-align: text-top;
-  }
-  #footer .footer-content .contact-form .form-div .input input ::-ms-input-placeholder {
-    font-size: 35px;
-    vertical-align: text-top;
-  }
-  #footer .footer-content .contact-form .form-div .input input ::placeholder {
-    font-size: 35px;
-    vertical-align: text-top;
-  }
-  #footer .footer-content .contact-form .form-div .email-input input {
-    height: 40px;
-  }
-  #footer .footer-content .contact-form .form-div .message-input input {
-    height: 300px;
-  }
-  #footer .footer-content .contact-form .form-div .message-input input placeholder {
-    font-size: 35px;
-  }
-  #footer .footer-content .contact-form .form-div button {
-    width: 97%;
-    margin: 5px;
-    background: #01D1FF;
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 28px;
-  }
-  #footer .footer-content .contact-form .form-div button:hover {
-    cursor: pointer;
-  }
+main .main-header {
+  font-family: "La Belle Aurore";
+  font-size: 10vw;
+  letter-spacing: 2.5vw;
+  padding: 10vh 0 0 0;
+}
+
+main .portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 28.57143vh 28.57143vh 28.57143vh 28.57143vh;
+      grid-template-rows: 28.57143vh 28.57143vh 28.57143vh 28.57143vh;
+      grid-template-areas: '1' '2' '3' '4';
+  color: #fff;
+  margin: 0 auto;
+}
+
+main .portfolio a {
+  display: block;
+  text-decoration: none;
+  width: 85%;
+  height: 85%;
+  margin: auto;
+}
+
+main .portfolio a .preview {
+  width: 100%;
+  height: 100%;
+  background: #000000af;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+main .portfolio a .preview h4 {
+  font-family: "La Belle Aurore";
+  font-size: 3vh;
+}
+
+main .portfolio a .preview p {
+  font-family: Cormorant;
+  font-size: 2vh;
+}
+
+main .portfolio a .preview:hover {
+  background: transparent;
+  color: transparent;
+}
+
+main .portfolio .fem-huddle {
+  background: url(../images/Untitled.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: '1';
+}
+
+main .portfolio .top-google {
+  background: url(../images/google.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: '2';
+}
+
+main .portfolio .fcc-tribute {
+  background: url(../images/tribute.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: '3';
+}
+
+main .portfolio .fcc-form {
+  background: url(../images/form.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: '4';
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  color: #fff;
+  margin: 0 auto;
+}
+
+#footer .emmanuele-durante {
+  padding: 5vh 0 0 0;
+  font-family: "La Belle Aurore";
+  font-size: 13vw;
+}
+
+#footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#footer .footer-content .presentation {
+  font-family: Cormorant;
+  font-size: 6vw;
+  margin: 0 0 0 3vw;
+}
+
+#footer .footer-content .presentation .thinker {
+  color: #df99ff;
+}
+
+#footer .footer-content .presentation .overthinker {
+  color: #FFD850;
+}
+
+#footer .footer-content .presentation .dreamer {
+  color: #01D1FF;
+}
+
+#footer .footer-content .contact-form {
+  width: 50%;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#footer .footer-content .contact-form .form-div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #727272;
+}
+
+#footer .footer-content .contact-form .form-div .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 5px;
+}
+
+#footer .footer-content .contact-form .form-div .input input {
+  vertical-align: text-top;
+  width: 95%;
+  margin: auto;
+}
+
+#footer .footer-content .contact-form .form-div .input input ::-webkit-input-placeholder {
+  font-size: 35px;
+  vertical-align: text-top;
+}
+
+#footer .footer-content .contact-form .form-div .input input :-ms-input-placeholder {
+  font-size: 35px;
+  vertical-align: text-top;
+}
+
+#footer .footer-content .contact-form .form-div .input input ::-ms-input-placeholder {
+  font-size: 35px;
+  vertical-align: text-top;
+}
+
+#footer .footer-content .contact-form .form-div .input input ::placeholder {
+  font-size: 35px;
+  vertical-align: text-top;
+}
+
+#footer .footer-content .contact-form .form-div .email-input input {
+  height: 40px;
+}
+
+#footer .footer-content .contact-form .form-div .message-input input {
+  height: 300px;
+}
+
+#footer .footer-content .contact-form .form-div .message-input input placeholder {
+  font-size: 35px;
+}
+
+#footer .footer-content .contact-form .form-div button {
+  width: 97%;
+  margin: 5px;
+  background: #01D1FF;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 28px;
+}
+
+#footer .footer-content .contact-form .form-div button:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 375px) {
