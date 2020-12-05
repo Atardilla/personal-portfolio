@@ -8,7 +8,7 @@ body
     .scroll-box
         width: 100vw
         height: 2000px
-        display: flexbox
+        display: flex
         flex-direction: column
         align-items: center
         overflow-y: scroll
@@ -17,29 +17,22 @@ body
         .header
             background: url(../images/background.png)
             background-repeat: no-repeat
-            background-size: contain
+            background-size: contein
             width: 100%
-            height: $proportional-y  
+            
             color: $white
             display: flex
             flex-direction: column
             align-items: center
             justify-content: space-around
 
-            .div-logo
-                align-self: flex-start
-                width: $real-x/2
-                height: $real-x/2
-                margin: 0 0 0 4vw
-                img
-                    width: 100%
-                    height: auto
+            
             
             .titles
                 display: flex
                 flex-direction: column
                 align-items: center
-                height: 50vh
+                height: 100vh
                 justify-content: center
 
 
@@ -60,17 +53,3 @@ body
                 font-size: 10vw
                 letter-spacing: 0.15em
 
-@media screen and ( min-width: 480px ) 
-
-    .header
-        height: 100vh !important
-        .div-logo
-            height: 0px !important
-            margin: 0 0 0 -1000px !important
-        .titles
-            align-self: flex-start !important
-            h2, p
-                font-size: 4.5vw !important
-                margin: 0 0 0 5vw
-
-    

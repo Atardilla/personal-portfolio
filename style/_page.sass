@@ -1,5 +1,6 @@
 main
     width: 100%
+    height: auto
     margin: 25vh auto 
     
     color: $white
@@ -20,21 +21,26 @@ main
 
     .portfolio
         display: grid
-        grid-template-columns: 1fr
-        grid-template-rows: $real-y/3.5 $real-y/3.5 $real-y/3.5 $real-y/3.5
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 30vh 30vh
         grid-template-areas: '1' '2' '3' '4'
+        column-gap: 3vw
+        grid-row-gap: 5vh
         color: $white
         
         margin: 0 auto 
-
+        width: 90%
+        
 
 
         a
             display: block
             text-decoration: none
-            width: 85%
-            height: 85%
-            margin: auto
+            align-self: center
+            justify-self: center
+            width: 100%
+            height: 100%
+            margin: 10px
 
             .preview
                 width: 100%
@@ -65,29 +71,32 @@ main
 
         .fem-huddle
             background: url(../images/Untitled.png)
-            background-size: contain
+            background-size: cover
             background-repeat: no-repeat
             grid-area: '1'
         .top-google
             background: url(../images/google.png)
-            background-size: contain
+            background-size: cover
             background-repeat: no-repeat
             grid-area: '2'
 
         .fcc-tribute
             background: url(../images/tribute.png)
-            background-size: contain
+            background-size: cover
             background-repeat: no-repeat
             grid-area: '3'
 
         .fcc-form
             background: url(../images/form.png)
-            background-size: contain
+            background-size: cover
             background-repeat: no-repeat
             grid-area: '4'
 
             
-
-
+@media screen and ( max-width: 896px ) 
+    main
+        .portfolio
+            grid-template-columns: 1fr 
+            grid-template-rows: 60vw 60vw 60vw 60vw
 
         
